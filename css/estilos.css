@@ -29,6 +29,11 @@ body {
     height: 80px;
     width: 100%;
     padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .logo__item {
@@ -250,10 +255,19 @@ body {
     padding: 10px 0 20px 0;
 }
 
-@media(min-width: 834px) {
+.cabecalho__pesquisar__item{
+    display: none;
+}
+
+@media(min-width: 615px) {
 
     body {
         height: 100vh;
+    }
+
+     /* ESTILOS DO HEADER */
+    .cabecalho__pesquisar__item{
+        display: block;
     }
 
     /* ESTILOS DO MENU LATERAL */
@@ -299,7 +313,9 @@ body {
 
 }
 
-@media(min-width: 1440px) {
+
+
+@media(min-width: 1040px) {
 
     /* SEÇÃO SUPERIOR */
 
